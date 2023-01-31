@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in Html</title>
+    <style>
+        
+        .box1{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            background-image: url(img2.jpg);
+            /* background-color: yellow; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        table, th , td{
+            border-radius: 10px ;
+            border: 2px solid rgb(83,40,5);
+            color: rgb(19, 14,6);
+        }
+        table{
+            margin-top: 25px;
+        }
+        th{
+            background-color: #e4c04a;
+        }
+        tr{
+            background-color: #f4d160;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="box1">This is Time Table </h1>
+    <div class="box">
+        <table border="1" cellspacing="15" cellpadding="12" align="center">
+            <thead>
+                <tr>
+                    <th>Days/Periods</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th></th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td rowspan="6">
+                        B <br>
+                        R <br>
+                        E <br>
+                        A <br>
+                        K <br>
+                    </td>
+                    <td>Maths</td>
+                    <td>Games</td>
+                    <td>Moral Education</td>
+                </tr>
+                <tr>
+                    <td>TuesDay</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td>Maths</td>
+                    <td>Games</td>
+                    <td>Moral Education</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td rowspan="3">
+                        Hindi
+                    </td>
+                    <td>Maths</td>
+                    <td>Games</td>
+                    <td>Moral Education</td>
+
+                </tr>
+                <tr>
+                    <td>Thrusday</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td> Games</td>
+                    <td>Moral Education</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td> Games</td>
+                    <td>Moral Education</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Hindi</td>
+                    <td colspan="3" align="center">
+                        Maths
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8" align="center"><b>This is Class VII routine</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
